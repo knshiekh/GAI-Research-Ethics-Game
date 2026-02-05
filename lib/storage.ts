@@ -2,7 +2,7 @@
 
 import { SessionState } from "./types";
 
-const KEY = "gai_ethics_toy_session_v1";
+const KEY = "gai_research_ethics_session_v1";
 
 export function loadSession(): SessionState | null {
   if (typeof window === "undefined") return null;

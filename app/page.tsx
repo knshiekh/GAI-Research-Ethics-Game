@@ -8,7 +8,7 @@ export default function Home() {
       <div className="card">
         <h2>How it works</h2>
         <p>
-          In this game, you'll face a series of research scenarios
+          In this exercise, you'll face a series of research scenarios
           where generative AI (GAI) might be used. For each scenario, you'll
           decide whether using GAI is:
         </p>
@@ -45,10 +45,10 @@ export default function Home() {
         <h2>Ready?</h2>
         <div className="btnRow">
           <Link href="/play" className="btn btnPrimary">
-            Start Playing →
+            Begin Assessment →
           </Link>
           <Link href="/results" className="btn btnPrimary">
-            View My Results
+            View Results
           </Link>
         </div>
       </div>

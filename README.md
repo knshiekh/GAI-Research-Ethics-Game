@@ -1,6 +1,6 @@
-# GAI Research Ethics Toy
+# GAI Research Ethics
 
-A Moral Machine–style vignette game about the appropriate use of generative AI (GAI) in research. The app helps researchers reflect on their ethical stance toward AI adoption in academic workflows.
+A Moral Machine–style vignette exercise about the appropriate use of generative AI (GAI) in research. The app helps researchers reflect on their ethical stance toward AI adoption in academic workflows.
 
 ## Features
 
@@ -32,12 +32,12 @@ app/
   layout.tsx          # Shell with header/footer
   globals.css         # Dark theme & component styles
   page.tsx            # Landing page
-  play/page.tsx       # Main game interface
+  assess/page.tsx     # Main assessment interface (cases)
   results/page.tsx    # Results view
 components/
   CaseCard.tsx        # Renders a single case vignette
   ConditionsChecklist.tsx  # Condition selector
-  ProgressBar.tsx     # Play progress display
+  ProgressBar.tsx     # Assessment progress display
   ResultsBlocks.tsx   # Results report builder
 lib/
   types.ts            # Core type definitions
@@ -51,7 +51,7 @@ data/
 ## How It Works
 
 1. **Load Session**: If no session exists, a new one is created with shuffled case order.
-2. **Play Cases**: For each case, choose a verdict:
+ 2. **Assess Cases**: For each case, choose a verdict:
    - **Approve**: GAI use is appropriate.
    - **Approve with Conditions**: GAI use OK if safeguards are met (select from list).
    - **Disapprove**: GAI should not be used.
@@ -116,7 +116,7 @@ The `Report` object includes:
 
 ## localStorage Key
 
-All session data is stored under the key: `gai_ethics_toy_session_v1`
+All session data is stored under the key: `gai_research_ethics_session_v1`
 
 You can clear it anytime via the "Clear Run" button or browser dev tools.
 

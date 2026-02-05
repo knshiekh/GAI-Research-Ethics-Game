@@ -1,6 +1,6 @@
 # 🚀 Ready to Launch
 
-## GAI Research Ethics Toy — Complete Next.js Implementation
+## GAI Research Ethics — Complete Next.js Implementation
 
 Your project is fully implemented and ready to run!
 
@@ -68,7 +68,7 @@ Visit: **http://localhost:3000**
 
 **Configuration (6):** package.json, tsconfig.json, next.config.js, .eslintrc.json, .npmrc, .gitignore
 
-**App Routes (5):** layout.tsx, globals.css, page.tsx (home), play/page.tsx (game), results/page.tsx
+**App Routes (5):** layout.tsx, globals.css, page.tsx (home), play/page.tsx (assessment), results/page.tsx
 
 **Components (4):** ProgressBar, CaseCard, ConditionsChecklist, ResultsBlocks
 
@@ -161,7 +161,7 @@ npm run dev -- -p 3001
 
 ### Want to clear your session?
 - Use the "Clear Run" button in results page
-- Or manually delete localStorage key: `gai_ethics_toy_session_v1`
+- Or manually delete localStorage key: `gai_research_ethics_session_v1`
 
 ### Want to reset everything?
 ```bash

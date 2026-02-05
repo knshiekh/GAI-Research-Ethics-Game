@@ -115,10 +115,10 @@ export default function Play() {
         <div className="card">
           <div className="btnRow">
             <button className="btn btnPrimary" onClick={handleViewResults}>
-              View My Results →
+              View Results →
             </button>
             <button className="btn btnPrimary" onClick={handleResetRun}>
-              Play Again
+              Restart Assessment
             </button>
           </div>
         </div>

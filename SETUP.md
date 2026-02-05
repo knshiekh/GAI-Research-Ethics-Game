@@ -52,6 +52,7 @@ npm start
 - `app/globals.css` — Global dark theme styles
 - `app/page.tsx` — Landing page
 - `app/play/page.tsx` — Game interface (24 cases)
+ - `app/play/page.tsx` — Assessment interface (24 cases)
 - `app/results/page.tsx` — Results & ethical profile
 
 ✅ **Components:**
@@ -108,7 +109,7 @@ npm run dev
 
 1. Start the dev server: `npm run dev`
 2. Open http://localhost:3000 in your browser
-3. Click "Start Playing" to begin
+3. Click "Begin Assessment" to begin
 4. Complete all 24 cases
 5. View your ethical profile in the Results page
 6. Download your results as JSON (stays on your device)

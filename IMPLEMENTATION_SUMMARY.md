@@ -1,6 +1,6 @@
 # Implementation Complete ✓
 
-## GAI Research Ethics Toy - Next.js App Router Project
+## GAI Research Ethics - Next.js App Router Project
 
 All files have been created and are ready to run with `npm install && npm run dev`.
 
@@ -12,7 +12,7 @@ All files have been created and are ready to run with `npm install && npm run de
 - Imports `./globals.css`
 - Exports metadata with title "GAI Research Ethics Toy"
 - Shell layout with header (logo + nav), main content, footer
-- Navigation links: Home, Play, Results
+- Navigation links: Home, Assess, Results
 
 ### 2. ✅ `app/globals.css`
 - Dark theme with CSS variables
@@ -21,8 +21,8 @@ All files have been created and are ready to run with `npm install && npm run de
 
 ### 3. ✅ `app/page.tsx`
 - Landing page with title "Decide when GAI is appropriate in research"
-- Explains gameplay and client-side only
-- Buttons to /play and /results
+- Explains assessment flow and client-side only
+- Buttons to /play and /results (labelled 'Assess' in the UI)
 
 ### 4. ✅ `app/play/page.tsx`
 - Client component with full game logic
@@ -78,11 +78,7 @@ All types defined:
 - `Report` { completedCount, totalCount, topConditions, dealbreakers, mindChangers, styleLabel, styleRationale }
 
 ### 11. ✅ `lib/storage.ts`
-- `KEY = "gai_ethics_toy_session_v1"`
-- `loadSession()`: SessionState|null from localStorage
-- `saveSession(s)`: saves to localStorage
-- `clearSession()`: removes from localStorage
-- `downloadJson(filename, obj)`: creates Blob & triggers download (no server)
+ `KEY = "gai_research_ethics_session_v1"`
 
 ### 12. ✅ `lib/engine.ts`
 Complete game logic:

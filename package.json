@@ -1,7 +1,7 @@
 {
-  "name": "gai-research-ethics-toy",
+  "name": "gai-research-ethics",
   "version": "1.0.0",
-  "description": "A Moral Machine-style vignette game about appropriate use of generative AI in research",
+  "description": "A vignette exercise about appropriate use of generative AI in research",
   "private": true,
   "scripts": {
     "dev": "next dev",

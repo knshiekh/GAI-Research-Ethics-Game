@@ -2,7 +2,7 @@
 
 # Quick verification that all required files exist
 
-echo "🔍 Checking GAI Research Ethics Toy project structure..."
+echo "🔍 Checking GAI Research Ethics project structure..."
 echo ""
 
 PROJECT_ROOT="/Users/kshiekh/Library/CloudStorage/OneDrive-VirginiaTech/GAI Research Ethics Game"

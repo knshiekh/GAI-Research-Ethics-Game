@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GAI Research Ethics Toy",
+  title: "GAI Research Ethics",
   description:
-    "A Moral Machine-style vignette game about appropriate use of generative AI in research.",
+    "A vignette exercise about appropriate use of generative AI in research.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
           <header className="header">
             <Link href="/" className="brand">
               <span className="logo">⚖️</span>
-              <span className="brandTitle">GAI Ethics Toy</span>
+              <span className="brandTitle">GAI Research Ethics</span>
               <span className="brandSubtitle">Research AI Decisions</span>
             </Link>
             <nav className="nav">
@@ -28,7 +28,7 @@ export default function RootLayout({
                 Home
               </Link>
               <Link href="/play" className="navLink">
-                Play
+                Assess
               </Link>
               <Link href="/results" className="navLink">
                 Results
