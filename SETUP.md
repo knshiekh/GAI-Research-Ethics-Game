@@ -115,4 +115,70 @@ npm run dev
 
 ---
 
+## Shareable Link Options (Send Instead of Git Repo)
+
+### Option 1: GitHub Pages (Recommended for quick sharing)
+
+Easiest way to share a public link with others — no cloning required.
+
+**Setup:**
+
+1. Push this repo to GitHub (create a public repo if not already done).
+
+2. Build the static export:
+   ```bash
+   npm install
+   npm run export
+   ```
+   This creates an `out/` folder with static files.
+
+3. Configure GitHub Pages:
+   - Go to your repository **Settings** → **Pages**
+   - Under "Source," select "Deploy from a branch"
+   - Choose `main` (or your branch) and `/root` or `/docs` folder
+   - **If using root folder:** rename `out/` to the repo root or copy contents
+   - **If using docs folder:** copy `out/` contents into `docs/`
+
+4. GitHub will auto-publish to `https://<yourusername>.github.io/<repo-name>`
+
+5. Share this public URL — no setup needed on recipient's end.
+
+**Test locally before pushing:**
+```bash
+npx serve out/
+# Opens at http://localhost:3000
+```
+
+### Option 2: Netlify (Also very easy)
+
+Even simpler UI than GitHub Pages.
+
+1. Run the export:
+   ```bash
+   npm run export
+   ```
+
+2. Go to [netlify.com](https://netlify.com) → "New site from Git" (or drag-and-drop the `out/` folder).
+
+3. Netlify auto-detects and deploys. You get a public URL immediately.
+
+4. Share the Netlify URL.
+
+### Option 3: Docker + Docker Hub (For production-grade sharing)
+
+If you want people to run via a container:
+
+1. Create a `Dockerfile` in the repo root (I can add this).
+2. Build and push:
+   ```bash
+   docker build -t <yourhubusername>/gai-research-ethics .
+   docker push <yourhubusername>/gai-research-ethics
+   ```
+3. Share the Docker image name. Others can run:
+   ```bash
+   docker run -p 3000:3000 <yourhubusername>/gai-research-ethics
+   ```
+
+---
+
 **Questions?** See `README.md` for more details.
