@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -42,12 +44,12 @@ export default function Home() {
       <div className="card">
         <h2>Ready?</h2>
         <div className="btnRow">
-          <a href="/play" className="btn btnPrimary">
+          <Link href="/play" className="btn btnPrimary">
             Start Playing →
-          </a>
-          <a href="/results" className="btn btnPrimary">
+          </Link>
+          <Link href="/results" className="btn btnPrimary">
             View My Results
-          </a>
+          </Link>
         </div>
       </div>
     </div>
