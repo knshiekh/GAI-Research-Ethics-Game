@@ -10,7 +10,6 @@ import {
   getCurrentCase,
   recordResponse,
   goBack,
-  buildReport,
 } from "@/lib/engine";
 import { loadSession, saveSession, clearSession } from "@/lib/storage";
 import ProgressBar from "@/components/ProgressBar";

@@ -85,7 +85,6 @@ interface GroupedFlips {
 
 function groupFlips(
   session: SessionState,
-  cases: GameCase[],
   casesById: Record<string, GameCase>
 ): GroupedFlips {
   const grouped: GroupedFlips = {};
@@ -150,8 +149,7 @@ interface StyleInference {
 function inferStyle(
   topConditionIds: string[],
   disapproveCount: number,
-  totalCount: number,
-  conditionsById: Record<string, ConditionDef>
+  totalCount: number
 ): StyleInference {
   const disapproveRate = totalCount > 0 ? disapproveCount / totalCount : 0;
   const rationale: string[] = [];
@@ -296,7 +294,7 @@ export function buildReport(
   const topDealbreakers = dealbreakers.slice(0, 8);
 
   // Mind changers: flips within families
-  const flips = groupFlips(session, cases, casesById);
+  const flips = groupFlips(session, casesById);
   const mindChangers = Object.entries(flips)
     .map(([changedFactor, examples]) => ({
       changedFactor,
@@ -311,8 +309,7 @@ export function buildReport(
   const styleInference = inferStyle(
     topConditionIds,
     disapproveCount,
-    completedCount,
-    conditionsById
+    completedCount
   );
 
   return {
