@@ -1,0 +1,42 @@
+[
+  {
+    "id": "disclose_advisor",
+    "label": "Disclose to research advisor"
+  },
+  {
+    "id": "disclose_coauthors",
+    "label": "Disclose to co-authors"
+  },
+  {
+    "id": "disclose_public",
+    "label": "Disclose in publication/findings"
+  },
+  {
+    "id": "no_sensitive_data",
+    "label": "No sensitive participant data used"
+  },
+  {
+    "id": "approved_tools_only",
+    "label": "Use only institutionally approved tools"
+  },
+  {
+    "id": "human_verify",
+    "label": "Human verification of outputs"
+  },
+  {
+    "id": "doc_workflow",
+    "label": "Document workflow & prompts"
+  },
+  {
+    "id": "replicable",
+    "label": "Results must be reproducible"
+  },
+  {
+    "id": "learning_protect",
+    "label": "Protect student learning outcomes"
+  },
+  {
+    "id": "bias_check",
+    "label": "Check for bias in outputs"
+  }
+]
