@@ -68,7 +68,7 @@ Visit: **http://localhost:3000**
 
 **Configuration (6):** package.json, tsconfig.json, next.config.js, .eslintrc.json, .npmrc, .gitignore
 
-**App Routes (5):** layout.tsx, globals.css, page.tsx (home), play/page.tsx (assessment), results/page.tsx
+**App Routes (5):** layout.tsx, globals.css, page.tsx (home), play/page.tsx (cases), results/page.tsx
 
 **Components (4):** ProgressBar, CaseCard, ConditionsChecklist, ResultsBlocks
 

@@ -118,7 +118,7 @@ export default function Play() {
               View Results →
             </button>
             <button className="btn btnPrimary" onClick={handleResetRun}>
-              Restart Assessment
+                Restart Cases
             </button>
           </div>
         </div>

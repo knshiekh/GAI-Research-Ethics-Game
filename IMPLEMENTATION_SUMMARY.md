@@ -12,7 +12,7 @@ All files have been created and are ready to run with `npm install && npm run de
 - Imports `./globals.css`
 - Exports metadata with title "GAI Research Ethics Toy"
 - Shell layout with header (logo + nav), main content, footer
-- Navigation links: Home, Assess, Results
+   - Navigation links: Home, Cases, Results
 
 ### 2. ✅ `app/globals.css`
 - Dark theme with CSS variables
@@ -21,8 +21,8 @@ All files have been created and are ready to run with `npm install && npm run de
 
 ### 3. ✅ `app/page.tsx`
 - Landing page with title "Decide when GAI is appropriate in research"
-- Explains assessment flow and client-side only
-- Buttons to /play and /results (labelled 'Assess' in the UI)
+   - Explains cases flow and client-side only
+   - Buttons to /play and /results (labelled 'Cases' in the UI)
 
 ### 4. ✅ `app/play/page.tsx`
 - Client component with full game logic

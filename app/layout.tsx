@@ -28,7 +28,7 @@ export default function RootLayout({
                 Home
               </Link>
               <Link href="/play" className="navLink">
-                Assess
+                Cases
               </Link>
               <Link href="/results" className="navLink">
                 Results

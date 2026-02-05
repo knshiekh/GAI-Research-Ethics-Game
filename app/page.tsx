@@ -45,7 +45,7 @@ export default function Home() {
         <h2>Ready?</h2>
         <div className="btnRow">
           <Link href="/play" className="btn btnPrimary">
-            Begin Assessment →
+            Begin Cases →
           </Link>
           <Link href="/results" className="btn btnPrimary">
             View Results

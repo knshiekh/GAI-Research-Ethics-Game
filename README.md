@@ -32,12 +32,12 @@ app/
   layout.tsx          # Shell with header/footer
   globals.css         # Dark theme & component styles
   page.tsx            # Landing page
-  assess/page.tsx     # Main assessment interface (cases)
+  play/page.tsx     # Main cases interface (cases)
   results/page.tsx    # Results view
 components/
   CaseCard.tsx        # Renders a single case vignette
   ConditionsChecklist.tsx  # Condition selector
-  ProgressBar.tsx     # Assessment progress display
+  ProgressBar.tsx     # Cases progress display
   ResultsBlocks.tsx   # Results report builder
 lib/
   types.ts            # Core type definitions
@@ -51,7 +51,7 @@ data/
 ## How It Works
 
 1. **Load Session**: If no session exists, a new one is created with shuffled case order.
- 2. **Assess Cases**: For each case, choose a verdict:
+ 2. **Cases**: For each case, choose a verdict:
    - **Approve**: GAI use is appropriate.
    - **Approve with Conditions**: GAI use OK if safeguards are met (select from list).
    - **Disapprove**: GAI should not be used.
